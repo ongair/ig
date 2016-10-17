@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Feed, Image, Icon } from 'semantic-ui-react';
+import TimeAgo from 'react-timeago';
 
 class Thread extends Component {
   render() {
     const contact = this.props.contacts.find(c => { return c.id === this.props.thread.contact; });
-    console.log("Contact", contact);
     return (
       <Feed.Event>
         <Feed.Label>
@@ -13,6 +13,7 @@ class Thread extends Component {
         <Feed.Content>
           <Feed.Summary>
             <Feed.User>{contact.name}</Feed.User>
+            <Feed.Date><TimeAgo date={this.props.thread.lastActivityAt} /></Feed.Date>
           </Feed.Summary>
           <Feed.Extra text>
             { this.props.thread.lastMessage.text }

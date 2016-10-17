@@ -37,6 +37,19 @@ const threads = [
         lastActivityAt: new Date() - 2000
       },
       likes: 1
+    },
+    {
+      id: "fskflkfjda",
+      lastActivityAt: new Date() - 3000,
+      contact: "mimionlineshopkenya",
+      lastMessage: {
+        id: "838233423424",
+        text: "Did you know that the most desirable man in Africa, Kevin Oduor, is the reigning Mr. World Kenya?",
+        type: "text",
+        inBound: true,
+        lastActivityAt: new Date() - 3000
+      },
+      likes: 1
     }
 ];
 

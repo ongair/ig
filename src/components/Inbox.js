@@ -5,7 +5,7 @@ import { Feed } from 'semantic-ui-react';
 class Inbox extends Component {
   render() {
     return (
-      <Feed>
+      <Feed size='large'>
         {this.props.threads.map((thread, i) => <Thread {...this.props} key={i} i={i} thread={thread} />)}
       </Feed>
     );

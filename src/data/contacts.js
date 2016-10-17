@@ -38,6 +38,16 @@ const contacts = [
     bio: "",
     followerCount: 876000,
     followingCount: 21
+  },
+  {
+    id: "mimionlineshopkenya",
+    name: "Mimi Online Shop Kenya",
+    username: "@mimionlineshopkenya",
+    url: "https://www.instagram.com/mimionlineshopkenya/",
+    picture: "https://instagram.fnbo2-1.fna.fbcdn.net/t51.2885-19/s150x150/12677735_438063163064103_406495845_a.jpg",
+    bio: "",
+    followerCount: 34000,
+    followingCount: 309
   }
 ];
 
