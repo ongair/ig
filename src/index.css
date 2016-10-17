@@ -1,5 +1,26 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+.ui.menu {
+  background-color: #512f8f;
+  border-radius: 0em;
+  margin-bottom: 0em;
+}
+
+.ui.feed {
+  margin-top: 0em;
+}
+
+.ui.feed .event {
+  padding: 1em;
+  border-bottom: 1px solid #eee;
+}
+
+.ui.feed .event:last-child {
+  border-bottom: 0px;
+}
+
+.ui.feed > .event > .label {
+  width: 3.5em;
+}
+
+.ui.feed > .event:first-child {
+  padding-top: 1em;
 }
