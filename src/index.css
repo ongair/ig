@@ -4,6 +4,10 @@
   margin-bottom: 0em;
 }
 
+.ui.menu .item {
+  color: #ffffff;
+}
+
 .ui.feed {
   margin-top: 0em;
 }
@@ -23,4 +27,16 @@
 
 .ui.feed > .event:first-child {
   padding-top: 1em;
+}
+
+.contact.ui.items {
+  margin-top: 0em;
+}
+
+.contact.ui.items > .item {
+  padding: 1em;
+}
+
+.contact .ui.horizontal.segments {
+  border-radius: 0em;
 }

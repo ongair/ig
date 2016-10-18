@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Feed, Image, Icon } from 'semantic-ui-react';
+import { Feed, Icon } from 'semantic-ui-react';
 import TimeAgo from 'react-timeago';
+import { Link } from 'react-router';
 
 class Thread extends Component {
   render() {
@@ -8,7 +9,9 @@ class Thread extends Component {
     return (
       <Feed.Event>
         <Feed.Label>
-          <img src={ contact.picture } alt={contact.name} />
+          <Link to={`/contacts/${contact.id}`}>
+            <img src={ contact.picture } alt={contact.name} />
+          </Link>
         </Feed.Label>
         <Feed.Content>
           <Feed.Summary>
@@ -28,32 +31,6 @@ class Thread extends Component {
       </Feed.Event>
     );
   }
-  // render() {
-  //   const contact = this.props.contacts.find(c => { return c.id === this.props.thread.contact; });
-  //   console.log("Contact", contact);
-  //   const lastUpdate = new Date(this.props.thread.lastActivityAt).toString();
-  //   console.log("Update", lastUpdate);
-  //   return (
-  //     <div className="item thread">
-  //       <div className="image">
-  //         <img src={contact.picture} alt={contact.name}/>
-  //       </div>
-  //       <div className="content">
-  //         <a className="header">
-  //           { contact.name }
-  //         </a>
-  //         <div className="meta">
-  //           <span>{ lastUpdate }</span>
-  //         </div>
-  //         <div className="description">
-  //           <p>{ this.props.thread.lastMessage.text }</p>
-  //         </div>
-  //         <div className="extra">
-  //         </div>
-  //       </div>
-  //     </div>
-  //   )
-  // }
 };
 
 export default Thread;

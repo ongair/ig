@@ -3,12 +3,8 @@ import { render } from 'react-dom';
 
 import Main from './components/App';
 import Inbox from './components/Inbox';
+import Contact from './components/Contact';
 import './index.css';
-
-// import javascript_time_ago from 'javascript-time-ago'
-// javascript_time_ago.locale(require('javascript-time-ago/locales/en'))
-// require('javascript-time-ago/intl-messageformat-global')
-// require('intl-messageformat/dist/locale-data/en')
 
 import { Router, Route, IndexRoute } from 'react-router';
 import { Provider } from 'react-redux';
@@ -19,6 +15,7 @@ const router = (
     <Router history={ history }>
       <Route path="/" component={Main}>
         <IndexRoute component={Inbox}></IndexRoute>
+        <Route path="/contacts/:contactId" component={Contact} />
       </Route>
     </Router>
   </Provider>
