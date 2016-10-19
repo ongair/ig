@@ -4,6 +4,7 @@ import { render } from 'react-dom';
 import Main from './components/App';
 import Inbox from './components/Inbox';
 import Contact from './components/Contact';
+import Login from './components/Login';
 import './index.css';
 
 import { Router, Route, IndexRoute } from 'react-router';
@@ -14,7 +15,8 @@ const router = (
   <Provider store={store}>
     <Router history={ history }>
       <Route path="/" component={Main}>
-        <IndexRoute component={Inbox}></IndexRoute>
+        <IndexRoute component={Login}></IndexRoute>
+        <Route path="/inbox" component={Inbox}></Route>
         <Route path="/contacts/:contactId" component={Contact} />
       </Route>
     </Router>

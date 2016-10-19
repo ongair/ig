@@ -7,7 +7,8 @@ function mapStateToProps(state) {
   return {
     user: state.user,
     contacts: state.contacts,
-    threads: state.threads
+    threads: state.threads,
+    account: state.account
   }
 }
 

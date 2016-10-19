@@ -1,7 +1,7 @@
 const user = {
   "id": 1,
   "name": "Trevor Kimenye",
-  "account": [{
+  "accounts": [{
     "id": "1",
     "username": "huddahthebosschick",
     "name": "Huddah",
