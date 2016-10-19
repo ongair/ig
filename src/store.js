@@ -9,7 +9,7 @@ import contacts from './data/contacts';
 import threads from './data/threads';
 
 const defaultState = {
-  title: "Ongair",
+  title: "Ongair",  
   user: user,
   contacts: contacts,
   threads: threads

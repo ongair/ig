@@ -1,10 +1,18 @@
 const user = {
   "id": 1,
   "name": "Trevor Kimenye",
-  "account": {
+  "account": [{
     "id": "1",
-    "name": "Huddah Cosmetics"
-  }
+    "username": "huddahthebosschick",
+    "name": "Huddah",
+    "selected": false
+  },
+  {
+    "id": "2",
+    "username": "tkimenye",
+    "name": "Trevor",
+    "selected": false
+  }]
 };
 
 export default user;
