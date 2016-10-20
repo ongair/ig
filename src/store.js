@@ -4,9 +4,9 @@ import { browserHistory } from 'react-router';
 import createSagaMiddleware from 'redux-saga';
 import createLogger from 'redux-logger';
 
-
-import rootReducer from './reducers/index';
-import postSaga from './sagas/postSaga';
+import rootReducer from './reducers/index'
+import postSaga from './sagas/postSaga'
+import commentSaga from './sagas/commentSaga'
 
 import user from './data/users';
 import contacts from './data/contacts';
@@ -16,25 +16,26 @@ const defaultState = {
   user: user,
   account: user.accounts[0],
   // account: null,
-  contacts: contacts
+  comments: [],
+  posts: []
 }
 
 const logger = createLogger();
 
 const sagaMiddleware = createSagaMiddleware()
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 const store = createStore(rootReducer, defaultState, composeEnhancers(applyMiddleware(sagaMiddleware, logger)))
 export const history = syncHistoryWithStore(browserHistory, store)
 
 sagaMiddleware.run(postSaga)
+sagaMiddleware.run(commentSaga)
 
 if (module.hot) {
   module.hot.accept('./reducers', () => {
-    const nextRootReducer = require('./reducers/index').default;
-    store.replaceReducer(nextRootReducer);
+    const nextRootReducer = require('./reducers/index').default
+    store.replaceReducer(nextRootReducer)
   });
 }
 
-export default store;
+export default store
