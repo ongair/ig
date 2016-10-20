@@ -6,8 +6,7 @@ import Main from './Main';
 function mapStateToProps(state) {
   return {
     user: state.user,
-    contacts: state.contacts,
-    threads: state.threads,
+    posts: state.posts,
     account: state.account
   }
 }

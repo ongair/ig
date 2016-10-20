@@ -2,57 +2,66 @@
   background-color: #512f8f;
   border-radius: 0em;
   margin-bottom: 0em;
-}
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%; }
+  .ui.menu .item {
+    color: #ffffff; }
 
-.ui.menu .item {
-  color: #ffffff;
-}
+.main {
+  position: relative;
+  top: 40px; }
 
+.ui.items.posts {
+  margin-top: 0em; }
+  .ui.items.posts .item {
+    padding: 1em; }
+
+@media screen and (max-width: 767px) {
+  .ui.posts.items .item {
+    padding: 1em;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    margin-top: 0em !important;
+    margin-bottom: 0em !important;
+    border-bottom: 1px solid #eee; }
+    .ui.posts.items .item .image.tiny {
+      width: 150px !important;
+      margin-left: 0em;
+      margin-right: 0em; }
+    .ui.posts.items .item .content {
+      padding: 0em 0em 0em 1em; } }
 .ui.feed {
-  margin-top: 0em;
-}
-
-.ui.feed .event {
-  padding: 1em;
-  border-bottom: 1px solid #eee;
-}
-
-.ui.feed .event:last-child {
-  border-bottom: 0px;
-}
-
-.ui.feed > .event > .label {
-  width: 3.5em;
-}
-
-.ui.feed > .event:first-child {
-  padding-top: 1em;
-}
+  margin-top: 0em; }
+  .ui.feed .event {
+    padding: 1em;
+    border-bottom: 1px solid #eee; }
+    .ui.feed .event:last-child {
+      border-bottom: 0px; }
+    .ui.feed .event:first-child {
+      padding-top: 1em; }
+    .ui.feed .event .label {
+      width: 3.5em; }
 
 .contact.ui.items {
-  margin-top: 0em;
-}
-
-.contact.ui.items > .item {
-  padding: 1em;
-}
+  margin-top: 0em; }
+  .contact.ui.items .item {
+    padding: 1em; }
 
 .contact .ui.horizontal.segments {
-  border-radius: 0em;
-}
+  border-radius: 0em; }
 
 .login {
-  padding: 2em;
-}
+  padding: 2em; }
+  .login img.logo {
+    width: 128px;
+    height: 128px;
+    display: block;
+    margin: 2.5em auto; }
+  .login .ui.dropdown {
+    width: 100%;
+    margin-bottom: 1em; }
 
-.login img.logo {
-  width: 128px;
-  height: 128px;
-  display: block;
-  margin: 2.5em auto;
-}
-
-.login .ui.dropdown {
-  width: 100%;
-  margin-bottom: 1em;
-}
+/*# sourceMappingURL=index.css.map */

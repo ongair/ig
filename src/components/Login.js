@@ -16,7 +16,7 @@ const Login = React.createClass({
   },
 
   componentWillReceiveProps(newProps) {
-    console.log("Login: We have received new props")
+    console.log("Login: We have received new props", newProps)
     const { account } = newProps;
     if (account && account.selected) {
       this.context.router.push('/inbox')
@@ -29,7 +29,7 @@ const Login = React.createClass({
     });
 
     return (
-      <div className="login">
+      <div className="login main">
         <a href="/">
           <img src={Logo} className='logo' alt="Ongair" />
         </a>
