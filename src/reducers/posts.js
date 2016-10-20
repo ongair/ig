@@ -4,9 +4,14 @@ function posts(state=[], action) {
   switch(action.type) {
     case POSTS_FETCH_SUCCEEDED:
 
+      // convert to array
       const results = Object.keys(action.posts).map(key => action.posts[key])
+
       // only return images
-      return results.filter(function(p) { return p.type === "image" })
+      var filtered = results.filter(function(p) { return p.type === "image" })
+
+      // sort,reverse and return first 20
+      return filtered.sort(function(postA, postB) { return postA.time - postB.time }).reverse().slice(0, 20)
     default:
       return state;
   }

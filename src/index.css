@@ -15,8 +15,15 @@
 
 .ui.items.posts {
   margin-top: 0em; }
-  .ui.items.posts .item {
+  .ui.items.posts .item.post {
     padding: 1em; }
+    .ui.items.posts .item.post .stats {
+      margin-top: 2em;
+      display: flex; }
+      .ui.items.posts .item.post .stats .stat {
+        padding-right: 1em; }
+        .ui.items.posts .item.post .stats .stat i.icon {
+          color: #512f8f; }
 
 @media screen and (max-width: 767px) {
   .ui.posts.items .item {

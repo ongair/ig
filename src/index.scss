@@ -1,4 +1,6 @@
 $break-small: 767px;
+$brand-color: #512f8f;
+
 .ui.menu {
   background-color: #512f8f;
   border-radius: 0em;
@@ -20,8 +22,20 @@ $break-small: 767px;
 
 .ui.items.posts {
   margin-top: 0em;
-  .item {
+  .item.post {
     padding: 1em;
+
+    .stats {
+      margin-top: 2em;
+      display: flex;
+      .stat {
+        padding-right: 1em;
+
+        i.icon {
+          color: $brand-color;
+        }
+      }
+    }
   }
 }
 
