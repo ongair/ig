@@ -18,7 +18,7 @@ const Login = React.createClass({
   componentWillReceiveProps(newProps) {
     const { account } = newProps.account;
     if (account && account.selected) {
-      this.props.history.push('/inbox');
+      this.context.router.push('/inbox')
     }
   },
 
@@ -51,5 +51,9 @@ const Login = React.createClass({
     );
   }
 });
+
+Login.contextTypes = {
+  router: React.PropTypes.object.isRequired
+};
 
 export default Login;
