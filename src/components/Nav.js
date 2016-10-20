@@ -25,6 +25,7 @@ class Nav extends Component {
       case 'posts':
         return '/inbox'
       case 'inbox':
+        return '/'
       default:
         return null
     }

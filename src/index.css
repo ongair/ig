@@ -28,6 +28,13 @@
         .ui.items.posts .item.post .stats .stat i.icon {
           color: #512f8f; }
 
+.thread .picture {
+  padding: 1em; }
+  .thread .picture img {
+    max-width: 100%;
+    width: 100%;
+    margin: auto; }
+
 @media screen and (max-width: 767px) {
   .ui.posts.items .item {
     padding: 1em;

@@ -10,5 +10,15 @@ export const Api = {
           throw new Error("Bad response from server");
         return response.json();
       })
+  },
+
+  fetchComments(postId) {
+    const URL = "https://ongairgram.firebaseio.com/comments.json?orderBy=\"postId\"&equalTo=\"" + postId + "\"";
+    return fetch(URL)
+      .then(function(response) {
+        if(response.status >= 400)
+          throw new Error("Bad response from server");
+        return response.json();
+      })
   }
 }

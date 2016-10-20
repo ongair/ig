@@ -18,7 +18,6 @@ $brand-color: #512f8f;
         margin-right: 0em;
       }
     }
-
   }
 }
 
@@ -42,6 +41,17 @@ $brand-color: #512f8f;
           color: $brand-color;
         }
       }
+    }
+  }
+}
+
+.thread {
+  .picture {
+    padding: 1em;
+    img {
+      max-width: 100%;
+      width: 100%;
+      margin: auto;
     }
   }
 }

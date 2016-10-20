@@ -9,14 +9,17 @@ const Login = React.createClass({
     const selected = this.refs.selectAccountDd.getSelectedItem();
 
     if (selected) {
-      const account = this.props.user.accounts.find(function(acc) { return acc.id === selected.value });
-      account.selected = true;
-      this.props.selectAccount(account);
+      const account = this.props.user.accounts.find(function(acc) { return acc.id === selected.value })
+      if (this.props.account && this.props.account.id === account.id)
+        this.context.router.push('/inbox')
+      else {
+        account.selected = true
+        this.props.selectAccount(account)
+      }
     }
   },
 
   componentWillReceiveProps(newProps) {
-    console.log("Login: We have received new props", newProps)
     const { account } = newProps;
     if (account && account.selected) {
       this.context.router.push('/inbox')
