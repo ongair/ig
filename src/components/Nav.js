@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import { Menu } from 'semantic-ui-react';
 
 class Nav extends Component {
+  componentWillReceiveProps(newProps) {
+    console.log("Nav: We have received new props", newProps)
+  }
 
   render() {
     return (

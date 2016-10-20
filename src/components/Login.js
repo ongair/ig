@@ -16,7 +16,8 @@ const Login = React.createClass({
   },
 
   componentWillReceiveProps(newProps) {
-    const { account } = newProps.account;
+    console.log("Login: We have received new props")
+    const { account } = newProps;
     if (account && account.selected) {
       this.context.router.push('/inbox')
     }

@@ -10,16 +10,13 @@ import postSaga from './sagas/postSaga';
 
 import user from './data/users';
 import contacts from './data/contacts';
-import threads from './data/threads';
 
 const defaultState = {
   title: "Ongair",
   user: user,
   account: user.accounts[0],
   // account: null,
-  contacts: contacts,
-  posts: [],
-  threads: threads
+  contacts: contacts
 }
 
 const logger = createLogger();
