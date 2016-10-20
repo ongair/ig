@@ -1,5 +1,5 @@
 import React from 'react';
-import Post from './Post';
+import PostItem from './Post';
 import { Item } from 'semantic-ui-react';
 
 const Inbox = React.createClass({
@@ -11,10 +11,10 @@ const Inbox = React.createClass({
   },
 
   render() {
-    const notEmpty = (this.props.posts && this.props.posts.length > 0)
+    // const notEmpty = (this.props.posts && this.props.posts.length > 0)
     return (
       <Item.Group className="posts main">
-        { this.props.posts.map((post, i) => <Post {...this.props} key={i} i={i} post={post} />) }
+        { this.props.posts.map((post, i) => <PostItem {...this.props} key={i} i={i} post={post} />) }
       </Item.Group>
     );
   }

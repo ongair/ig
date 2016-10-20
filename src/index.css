@@ -8,6 +8,9 @@
   width: 100%; }
   .ui.menu .item {
     color: #ffffff; }
+    .ui.menu .item a i.icon {
+      color: #ffffff;
+      margin-right: 0em; }
 
 .main {
   position: relative;
@@ -38,6 +41,8 @@
       width: 150px !important;
       margin-left: 0em;
       margin-right: 0em; }
+      .ui.posts.items .item .image.tiny img {
+        width: 150px !important; }
     .ui.posts.items .item .content {
       padding: 0em 0em 0em 1em; } }
 .ui.feed {

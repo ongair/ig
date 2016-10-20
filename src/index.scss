@@ -12,6 +12,13 @@ $brand-color: #512f8f;
 
   .item {
     color: #ffffff;
+    a {
+      i.icon {
+        color: #ffffff;
+        margin-right: 0em;
+      }
+    }
+
   }
 }
 
@@ -54,6 +61,10 @@ $brand-color: #512f8f;
         width: 150px !important;
         margin-left: 0em;
         margin-right: 0em;
+
+        img {
+          width: 150px !important;
+        }
       }
 
       .content {

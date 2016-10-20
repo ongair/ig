@@ -3,11 +3,13 @@ import { connect } from 'react-redux';
 import * as actionCreators from '../actions/';
 import Main from './Main';
 
-function mapStateToProps(state) {
+function mapStateToProps(state, ownProps) {
   return {
     user: state.user,
     posts: state.posts,
-    account: state.account
+    comments: state.comments,
+    account: state.account,
+    location: ownProps.location
   }
 }
 
