@@ -1,4 +1,4 @@
-import { COMMENTS_FETCH_SUCCEEDED } from '../actions/index';
+import { COMMENTS_FETCH_SUCCEEDED, REMOVE_COMMENT } from '../actions/index';
 
 function comments(state=[], action) {
   switch(action.type) {
@@ -9,6 +9,13 @@ function comments(state=[], action) {
       // sort,reverse and return
       return results.sort(function(comA, comB) { return comA.time - comB.time }).reverse()
 
+    case REMOVE_COMMENT:
+      // const ids = state.find()
+      const index = state.findIndex(function(c) { return c.id === action.commentId })
+      return [
+        ...state.slice(0, index),
+        ...state.slice(index+1)
+      ];
     default:
       return state;
   }

@@ -14,7 +14,7 @@
 
 .main {
   position: relative;
-  top: 40px; }
+  top: 45px; }
 
 .ui.items.posts {
   margin-top: 0em; }
@@ -28,12 +28,12 @@
         .ui.items.posts .item.post .stats .stat i.icon {
           color: #512f8f; }
 
-.thread .picture {
-  padding: 1em; }
-  .thread .picture img {
-    max-width: 100%;
-    width: 100%;
-    margin: auto; }
+.rc-swipeout {
+  overflow: hidden;
+  position: relative;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #eee; }
 
 @media screen and (max-width: 767px) {
   .ui.posts.items .item {
