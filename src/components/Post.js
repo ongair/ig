@@ -9,7 +9,7 @@ class PostItem extends Component {
     const p = this.props.post
     const likes = numeral(p.likes).format('0a')
     const comments = numeral(p.comments).format('0a')
-    
+
     return (
       <Item className='post'>
         <div className='tiny image'>

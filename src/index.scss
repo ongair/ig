@@ -57,6 +57,21 @@ a {
   border-bottom: 1px solid #eee;
 }
 
+.reports {
+  .overview {
+    padding: 1em;
+    border-bottom: 1px solid #eee;
+
+    .ui.statistics .statistic,
+    .ui.statistic {
+      .value {
+        font-size: 2.5rem;
+      }
+      margin-bottom: 0em;
+    }
+  }
+}
+
 @media screen and (max-width: $break-small) {
   .ui.posts.items {
     .item {

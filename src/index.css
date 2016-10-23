@@ -38,6 +38,16 @@ a {
   padding-bottom: 0.5em;
   border-bottom: 1px solid #eee; }
 
+.reports .overview {
+  padding: 1em;
+  border-bottom: 1px solid #eee; }
+  .reports .overview .ui.statistics .statistic,
+  .reports .overview .ui.statistic {
+    margin-bottom: 0em; }
+    .reports .overview .ui.statistics .statistic .value,
+    .reports .overview .ui.statistic .value {
+      font-size: 2.5rem; }
+
 @media screen and (max-width: 767px) {
   .ui.posts.items .item {
     padding: 1em;
