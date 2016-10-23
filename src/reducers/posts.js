@@ -11,7 +11,7 @@ function posts(state=[], action) {
       var filtered = results.filter(function(p) { return p.type === "image" })
 
       // sort,reverse and return first 20
-      return filtered.sort(function(postA, postB) { return postA.time - postB.time }).reverse().slice(0, 20)
+      return filtered.sort(function(postA, postB) { return postA.time - postB.time }).reverse().slice(0, 100)
     default:
       return state;
   }

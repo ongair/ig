@@ -12,7 +12,14 @@ const user = {
     "username": "tkimenye",
     "name": "Trevor",
     "selected": false
-  }]
+  },
+  {
+    "id": "3",
+    "username": "backyardshoez",
+    "name": "Backyard Shoez",
+    "selected": false
+  }
+]
 };
 
 export default user;

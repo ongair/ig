@@ -20,6 +20,10 @@ class Nav extends Component {
     }
   }
 
+  hasAccount() {
+    return this.props.account != null
+  }
+
   getLinkForLocation(location) {
     switch (this.getPath(location)) {
       case 'posts':
@@ -39,14 +43,25 @@ class Nav extends Component {
       default:
         return 'Ongair'
     }
-
   }
 
-  render() {
+  getRightMenu() {
+    return (
+      <Menu.Menu position='right'>
+        <Menu.Item name='dashoard'>
+          Reports
+        </Menu.Item>
+      </Menu.Menu>
+    )
+  }
+
+  getMenu() {
     const { location } = this.props
     const iconClass = this.getIconForLocation(location)
     const title = this.getTitleForLocation(location)
     const link = this.getLinkForLocation(location)
+
+
     return (
       <Menu>
         <Menu.Item>
@@ -55,8 +70,15 @@ class Nav extends Component {
           </Link>
         </Menu.Item>
         <Menu.Item header>{ title }</Menu.Item>
+        <Menu.Item>
+          <Link to='/reports'>Reports</Link>
+        </Menu.Item>
       </Menu>
-    );
+    )
+  }
+
+  render() {
+    return this.getMenu();
   }
 };
 

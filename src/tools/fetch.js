@@ -15,7 +15,7 @@ var { InstagramPosts, InstagramComments } = require('instagram-screen-scrape');
 
 var posts = {};
 // var username = 'huddahthebosschick';
-var username = 'tkimenye';
+var username = 'backyardshoez';
 
 streamOfPosts = new InstagramPosts({username: username });
 streamOfPosts.on('data', function(post) {
@@ -24,7 +24,7 @@ streamOfPosts.on('data', function(post) {
 });
 
 function savePost(post) {
-
+  // console.log("Post", post);
   var newPostKey = firebase.database().ref().child('posts').push().key;
   var update = {};
   update['/posts/' + newPostKey] = post;
