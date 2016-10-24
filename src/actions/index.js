@@ -5,6 +5,7 @@ export const POSTS_FETCH_SUCCEEDED = 'POSTS_FETCH_SUCCEEDED';
 export const COMMENTS_FETCH_SUCCEEDED = 'COMMENTS_FETCH_SUCCEEDED';
 export const REQUEST_COMMENTS = 'REQUEST_COMMENTS';
 export const REMOVE_COMMENT = 'REMOVE_COMMENT';
+export const REMOVE_COMMENT_SUCCEEDED = 'REMOVE_COMMENT_SUCCEEDED';
 
 export function readThread(threadId) {
   return {
@@ -34,9 +35,9 @@ export function requestComments(postId) {
   }
 }
 
-export function removeComment(commentId) {
+export function removeComment(commentId, comment) {
   return {
     type: REMOVE_COMMENT,
-    commentId
+    comment
   }
 }

@@ -5,7 +5,6 @@ class PostThread extends Component {
 
   componentDidMount() {
     const postId = this.props.params.postId
-    console.log("Post id", postId)
     this.props.requestComments(postId)
   }
 

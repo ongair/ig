@@ -52,8 +52,8 @@ a {
 .rc-swipeout {
   overflow: hidden;
   position: relative;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
   border-bottom: 1px solid #eee;
 }
 
@@ -103,9 +103,13 @@ a {
 .ui.feed {
   margin-top: 0em;
 
+  &.reply {
+    background: #f0f0f0;
+  }
+
   .event {
     padding: 1em;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #DADEDF;
 
     &:last-child {
       border-bottom: 0px;
@@ -113,6 +117,7 @@ a {
 
     &:first-child {
       padding-top: 1em;
+      padding-bottom: 1em;
     }
 
     .label {

@@ -34,8 +34,8 @@ a {
 .rc-swipeout {
   overflow: hidden;
   position: relative;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
   border-bottom: 1px solid #eee; }
 
 .reports .overview {
@@ -67,13 +67,16 @@ a {
       padding: 0em 0em 0em 1em; } }
 .ui.feed {
   margin-top: 0em; }
+  .ui.feed.reply {
+    background: #f0f0f0; }
   .ui.feed .event {
     padding: 1em;
-    border-bottom: 1px solid #eee; }
+    border-bottom: 1px solid #DADEDF; }
     .ui.feed .event:last-child {
       border-bottom: 0px; }
     .ui.feed .event:first-child {
-      padding-top: 1em; }
+      padding-top: 1em;
+      padding-bottom: 1em; }
     .ui.feed .event .label {
       width: 3.5em; }
 

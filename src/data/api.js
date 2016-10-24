@@ -14,11 +14,17 @@ export const Api = {
 
   fetchComments(postId) {
     const URL = "https://ongairgram.firebaseio.com/comments.json?orderBy=\"postId\"&equalTo=\"" + postId + "\"";
+    console.log("Fetch comments", URL)
     return fetch(URL)
       .then(function(response) {
         if(response.status >= 400)
-          throw new Error("Bad response from server");
-        return response.json();
+          throw new Error("Bad response from server")
+        return response.json()
       })
+  },
+
+  removeComment(comment) {
+    console.log("Removing comment", comment)
+    return true
   }
 }
