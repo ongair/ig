@@ -19,16 +19,16 @@ a {
   position: relative;
   top: 45px; }
 
-.ui.items.posts {
+.posts .ui.items {
   margin-top: 0em; }
-  .ui.items.posts .item.post {
+  .posts .ui.items .item.post {
     padding: 1em; }
-    .ui.items.posts .item.post .stats {
+    .posts .ui.items .item.post .stats {
       margin-top: 2em;
       display: flex; }
-      .ui.items.posts .item.post .stats .stat {
+      .posts .ui.items .item.post .stats .stat {
         padding-right: 1em; }
-        .ui.items.posts .item.post .stats .stat i.icon {
+        .posts .ui.items .item.post .stats .stat i.icon {
           color: #512f8f; }
 
 .rc-swipeout {
@@ -38,7 +38,7 @@ a {
   padding-bottom: 0em;
   border-bottom: 1px solid #eee; }
 
-.thread .ui.basic.buttons {
+.ui.basic.buttons {
   border-radius: 0em; }
 
 .reports .overview {
@@ -52,7 +52,7 @@ a {
       font-size: 2.5rem; }
 
 @media screen and (max-width: 767px) {
-  .ui.posts.items .item {
+  .posts .ui.items .item {
     padding: 1em;
     width: 100%;
     display: flex !important;
@@ -60,15 +60,15 @@ a {
     margin-top: 0em !important;
     margin-bottom: 0em !important;
     border-bottom: 1px solid #eee; }
-    .ui.posts.items .item .image.tiny {
+    .posts .ui.items .item .image.tiny {
       width: 150px !important;
       margin-left: 0em;
       margin-right: 0em; }
-      .ui.posts.items .item .image.tiny img {
+      .posts .ui.items .item .image.tiny img {
         width: 150px !important; }
-    .ui.posts.items .item .content {
+    .posts .ui.items .item .content {
       padding: 0em 0em 0em 1em; }
-      .ui.posts.items .item .content .description {
+      .posts .ui.items .item .content .description {
         overflow: hidden;
         text-overflow: ellipsis; } }
 .ui.feed {

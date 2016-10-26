@@ -26,7 +26,6 @@ class PostThread extends Component {
     const filter = this.props.filter
     var self = this
     const comments = this.props.comments.filter(function(comment) {
-      // return ( self.isAll() )
       switch (filter) {
         case 'all':
           return true
