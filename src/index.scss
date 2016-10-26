@@ -30,19 +30,21 @@ a {
   top: 45px;
 }
 
-.ui.items.posts {
-  margin-top: 0em;
-  .item.post {
-    padding: 1em;
+.posts {
+  .ui.items {
+    margin-top: 0em;
+    .item.post {
+      padding: 1em;
 
-    .stats {
-      margin-top: 2em;
-      display: flex;
-      .stat {
-        padding-right: 1em;
+      .stats {
+        margin-top: 2em;
+        display: flex;
+        .stat {
+          padding-right: 1em;
 
-        i.icon {
-          color: $brand-color;
+          i.icon {
+            color: $brand-color;
+          }
         }
       }
     }
@@ -57,10 +59,8 @@ a {
   border-bottom: 1px solid #eee;
 }
 
-.thread {
-  .ui.basic.buttons {
-    border-radius: 0em;
-  }
+.ui.basic.buttons {
+  border-radius: 0em;
 }
 
 .reports {
@@ -79,32 +79,34 @@ a {
 }
 
 @media screen and (max-width: $break-small) {
-  .ui.posts.items {
-    .item {
-      padding: 1em;
-      width: 100%;
-      display: flex !important;
-      flex-direction: row !important;
-      margin-top: 0em !important;
-      margin-bottom: 0em !important;
-      border-bottom: 1px solid #eee;
+  .posts {
+    .ui.items {
+      .item {
+        padding: 1em;
+        width: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        margin-top: 0em !important;
+        margin-bottom: 0em !important;
+        border-bottom: 1px solid #eee;
 
-      .image.tiny {
-        width: 150px !important;
-        margin-left: 0em;
-        margin-right: 0em;
-
-        img {
+        .image.tiny {
           width: 150px !important;
+          margin-left: 0em;
+          margin-right: 0em;
+
+          img {
+            width: 150px !important;
+          }
         }
-      }
 
-      .content {
-        padding: 0em 0em 0em 1em;
+        .content {
+          padding: 0em 0em 0em 1em;
 
-        .description {
-          overflow: hidden;
-          text-overflow: ellipsis;
+          .description {
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
         }
       }
     }
