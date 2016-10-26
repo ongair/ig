@@ -11,7 +11,7 @@ const Login = React.createClass({
     if (selected) {
       const account = this.props.user.accounts.find(function(acc) { return acc.id === selected.value })
       if (this.props.account && this.props.account.id === account.id)
-        this.context.router.push('/inbox')
+        this.context.router.push('/choose')
       else {
         account.selected = true
         this.props.selectAccount(account)
@@ -22,7 +22,7 @@ const Login = React.createClass({
   componentWillReceiveProps(newProps) {
     const { account } = newProps;
     if (account && account.selected) {
-      this.context.router.push('/inbox')
+      this.context.router.push('/choose')
     }
   },
 
