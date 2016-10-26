@@ -18,6 +18,12 @@ const user = {
     "username": "backyardshoez",
     "name": "Backyard Shoez",
     "selected": false
+  },
+  {
+    "id": "4",
+    "username": "kilimall.kenya",
+    "name": "Kilimall",
+    "selected": false
   }
 ]
 };

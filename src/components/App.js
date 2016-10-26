@@ -9,6 +9,7 @@ function mapStateToProps(state, ownProps) {
     posts: state.posts,
     comments: state.comments,
     account: state.account,
+    filter: state.filter,
     location: ownProps.location
   }
 }

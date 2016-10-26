@@ -38,6 +38,9 @@ a {
   padding-bottom: 0em;
   border-bottom: 1px solid #eee; }
 
+.thread .ui.basic.buttons {
+  border-radius: 0em; }
+
 .reports .overview {
   padding: 1em;
   border-bottom: 1px solid #eee; }
@@ -64,7 +67,10 @@ a {
       .ui.posts.items .item .image.tiny img {
         width: 150px !important; }
     .ui.posts.items .item .content {
-      padding: 0em 0em 0em 1em; } }
+      padding: 0em 0em 0em 1em; }
+      .ui.posts.items .item .content .description {
+        overflow: hidden;
+        text-overflow: ellipsis; } }
 .ui.feed {
   margin-top: 0em; }
   .ui.feed.reply {

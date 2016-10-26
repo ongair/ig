@@ -6,6 +6,7 @@ export const COMMENTS_FETCH_SUCCEEDED = 'COMMENTS_FETCH_SUCCEEDED';
 export const REQUEST_COMMENTS = 'REQUEST_COMMENTS';
 export const REMOVE_COMMENT = 'REMOVE_COMMENT';
 export const REMOVE_COMMENT_SUCCEEDED = 'REMOVE_COMMENT_SUCCEEDED';
+export const FILTER_COMMENTS = 'FILTER_COMMENTS'
 
 export function readThread(threadId) {
   return {
@@ -39,5 +40,12 @@ export function removeComment(commentId, comment) {
   return {
     type: REMOVE_COMMENT,
     comment
+  }
+}
+
+export function filterComments(filterType) {
+  return {
+    type: FILTER_COMMENTS,
+    filterType
   }
 }

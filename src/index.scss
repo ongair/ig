@@ -57,6 +57,12 @@ a {
   border-bottom: 1px solid #eee;
 }
 
+.thread {
+  .ui.basic.buttons {
+    border-radius: 0em;
+  }
+}
+
 .reports {
   .overview {
     padding: 1em;
@@ -95,6 +101,11 @@ a {
 
       .content {
         padding: 0em 0em 0em 1em;
+
+        .description {
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
       }
     }
   }

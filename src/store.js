@@ -9,13 +9,13 @@ import postSaga from './sagas/postSaga'
 import commentSaga from './sagas/commentSaga'
 
 import user from './data/users';
-import contacts from './data/contacts';
 
 const defaultState = {
   title: "Ongair",
   user: user,
-  account: user.accounts[0],
+  account: user.accounts[3],
   // account: null,
+  filter: "all",
   comments: [],
   posts: []
 }

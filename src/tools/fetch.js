@@ -15,7 +15,8 @@ var { InstagramPosts, InstagramComments } = require('instagram-screen-scrape');
 
 var posts = {};
 // var username = 'huddahthebosschick';
-var username = 'backyardshoez';
+// var username = 'backyardshoez';
+var username = 'kilimall.kenya';
 
 streamOfPosts = new InstagramPosts({username: username });
 streamOfPosts.on('data', function(post) {
