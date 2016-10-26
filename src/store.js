@@ -18,6 +18,7 @@ const defaultState = {
   filter: "all",
   comments: [],
   posts: []
+
 }
 
 const logger = createLogger();
