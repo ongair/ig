@@ -105,4 +105,8 @@ a {
     width: 100%;
     margin-bottom: 1em; }
 
-/*# sourceMappingURL=index.css.map */
+.before .menu {
+  margin-top: 10% !important;
+  padding: 2em; }
+.before .item {
+  color: #512f8f !important; }
